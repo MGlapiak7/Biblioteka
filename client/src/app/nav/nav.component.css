@@ -1,0 +1,13 @@
+.navbar-info{
+    color: lightgrey;
+    font-size: 20px;
+}
+.fa-shopping-cart{
+    color: lightgrey;
+    font-size: 20px;
+    float: right;
+}
+.btn{
+    background-color: #343a40;
+    border: none;
+}

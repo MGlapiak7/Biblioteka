@@ -1,0 +1,9 @@
+<div class="categories-container">
+    <h1 class="text-center ml-3">Kategorie</h1>
+    <hr>
+    <div>
+        <form *ngFor="let categorie of categories">
+            <label for="categorie">{{categorie.id}} - {{categorie.category}}</label>
+        </form>
+    </div>
+</div>

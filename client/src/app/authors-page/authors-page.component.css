@@ -1,0 +1,10 @@
+.listOfAuthors{
+    margin-left: auto;
+    margin-right: auto;
+}
+.selectAuthorCheckbox{
+    margin-right: 20px;
+}
+.selectAuthorSubmit{
+    float: right;
+}

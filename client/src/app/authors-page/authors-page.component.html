@@ -1,0 +1,11 @@
+<div class="authors-container">
+    <h1 class="text-center ml-3">Autorzy</h1>
+    <hr>
+    <div class="listOfAuthors">
+        <form *ngFor="let author of authors">
+            <input class="selectAuthorCheckbox" type="checkbox">
+            <label class="author" for="author">{{author.id}} - {{author.firstName}} {{author.lastName}}</label>
+            <input class="selectAuthorSubmit" type="submit" value="Wybierz">
+        </form>
+    </div>
+</div>

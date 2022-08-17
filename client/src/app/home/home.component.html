@@ -1,0 +1,29 @@
+<div class="container">
+    <div *ngIf="!homeDisplayMode" class="displayed" style="text-align: center">
+        <h1 style="margin-top: 150px">Klikaj i wypożyczaj</h1>
+        <p>Wybierz spośród dostępnych książek to, co najbardziej Cię interesuje!</p>
+        <button (click)="changingMode()" class="btn btn-info btn-lg" style="margin-top: 50px">Zacznijmy!</button>
+    </div>
+    <div *ngIf="homeDisplayMode" class="hidden" style="text-align: center">
+        <h1 style="margin-top: 150px">Pora na wyszukiwanie!</h1>
+        <button (click)="goBack()" class="btn btn-info" style="float: right;">
+            <i class="fa fa-arrow-circle-left"></i></button>
+        <p style="margin-left: 60px">Co chciałbyś znaleźć?</p>
+        <div class="text-center">
+            <button (click)="getCategories()" class="btn btn-info mr-2">Wyświetl Kategorie</button>
+            <button (click)="getAuthors()" class="btn btn-info mr-2">Wyświetl Autorów</button>
+            <button (click)="getBooks()" class="btn btn-info">Wyświetl Książki</button>
+        </div>
+    </div>
+    <div *ngIf="homeDisplayMode" class="lists-container">
+        <div *ngIf="categoriesDisplay" class="categories-container">
+            <app-categories-page></app-categories-page>
+        </div>
+        <div *ngIf="authorsDisplay" class="authors-container">
+            <app-authors-page></app-authors-page>
+        </div>
+        <div *ngIf="booksDisplay" class="books-container">
+            <app-books-page></app-books-page>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="books-container">
+    <h1 class="text-center ml-3">Książki</h1>
+    <hr>
+    <div>
+        <form *ngFor="let book of books">
+            <label>{{book.id}} - {{book.title}}</label>
+        </form>
+    </div>
+</div>

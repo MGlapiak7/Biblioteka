@@ -22,9 +22,6 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("ReleaseDate")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Title")
                         .HasColumnType("TEXT");
 
